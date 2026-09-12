@@ -1,1 +1,6 @@
-# Fill in with the exact package versions used once implementation starts.
+# Phase 1 runtime + test dependencies.
+pydantic>=2.6
+PyYAML>=6.0
+
+# Testing
+pytest>=7.4

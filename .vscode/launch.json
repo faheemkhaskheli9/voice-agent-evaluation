@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "VAE: validate example personas",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "vae.cli",
+      "args": ["validate", "examples/personas"],
+      "cwd": "${workspaceFolder}",
+      "env": { "PYTHONPATH": "${workspaceFolder}/src" },
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "VAE: show a persona",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "vae.cli",
+      "args": ["show", "examples/personas/frustrated_billing.yaml"],
+      "cwd": "${workspaceFolder}",
+      "env": { "PYTHONPATH": "${workspaceFolder}/src" },
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "VAE: pytest",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": ["tests/", "-v"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    }
+  ]
+}
